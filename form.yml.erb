@@ -92,7 +92,7 @@ attributes:
         "<%= cr[:name].gsub('_', ' ') %>", "<%= cr[:name] %>",
         data-set-account: "<%= cr[:account] %>",
         data-set-cluster: "<%= cr[:cluster] %>",
-        <%- if cr[:extra_mem] != true -%>
+        <%- if cr[:extra_gpu_mem] != true -%>
         data-hide-extra-gpu-mem: true,
         data-set-extra-gpu-mem: 0,
         <%- end -%>
